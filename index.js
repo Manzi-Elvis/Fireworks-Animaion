@@ -38,11 +38,7 @@ class Particle {
 }
 
 function createFireworks(x, y) {
-<<<<<<< Updated upstream
-  const colors = ["#ff0000", "#00ff00", "#0000ff", "#ffff00", "#ff00ff", "#00ffff", "#ffffff"];
-=======
   const colors = ["#ff0000", "#00ff00", "#0000ff", "#ffff00", "#ff00ff", "#00ffff", "#ffa500", "#008000","#09316eff", "#ff1493", "#00bfff"];
->>>>>>> Stashed changes
   let color = colors[Math.floor(Math.random() * colors.length)];
   for (let i = 0; i < 100; i++) {
     particles.push(new Particle(x, y, color));
