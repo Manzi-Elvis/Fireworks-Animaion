@@ -17,7 +17,7 @@ class Particle {
     this.vx = Math.cos(this.angle) * this.speed;
     this.vy = Math.sin(this.angle) * this.speed;
     this.alpha = 1;
-    this.decay = Math.random() * 0.02 + 0.01;
+    this.decay = Math.random() * 0.02 + 0.004;
   }
 
   update() {
@@ -38,7 +38,7 @@ class Particle {
 }
 
 function createFireworks(x, y) {
-  const colors = ["#ff0000", "#00ff00", "#0000ff", "#ffff00", "#ff00ff", "#00ffff", "#ffffff"];
+  const colors = ["#ff0000", "#00ff00", "#0000ff", "#ffff00", "#ff00ff", "#00ffff", "#ffffff", "#ffa500", "#800080", "#008000","#09316eff", "#ff1493", "#00bfff"];
   let color = colors[Math.floor(Math.random() * colors.length)];
   for (let i = 0; i < 100; i++) {
     particles.push(new Particle(x, y, color));
